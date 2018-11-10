@@ -630,31 +630,13 @@ footer .social-list li a i:hover {
 	}
 
 	#page3 {
-		height: 360px;
+		height: 510px;
 	}
 
 	#page3 h2{
 		font-size: 40px;
 		padding: 15px;
-	}
-
-	#page3 .owl-item {
-		height: 150px;
-		width: 150px;
-		padding: 2px;
-		margin-top:10px;
-		line-height: 128px;
-		background-color: red;
-		font-size: 30px;
-		border-radius: 1px;		
-	}
-
-	.owl-item {
-		background-color: blueviolet;
-		height: 128px;
-		width: 128px;
-		border-radius: 8px;
-	}
+	}	
 }
 
 
