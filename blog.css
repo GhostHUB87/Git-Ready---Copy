@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue
+}
+
+h2 { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background-color:rgb(red, green, blue) 0.3;
+    display: inline;
+    padding: 10px;    
+}
+
+a {
+    position: absolute;
+    font-size: 30px;
+    left: 45px;
+    top: 30px;
+    text-decoration: none;
+}
