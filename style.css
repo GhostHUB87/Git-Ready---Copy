@@ -1,11 +1,10 @@
-body {
+html {
 	margin: 0;
 	padding: 0;
-	height: 100vh;
 }
 
 #particles-js {
-	height: 1000px;
+	height: 200px;
 	background-image: url(images/golden-bridge.jpg);
 	background-repeat :no-repeat;
     background-size: contain;
@@ -22,7 +21,7 @@ body {
     text-align: center;
     top: 40%;
     color:#fff;
-	font-size: 120px; 
+	font-size: 6vmax; 
 	line-height: 132px;
     font-family: 'Playfair Display', serif;
     font-weight: 900;   
@@ -137,11 +136,11 @@ transition: all 0.2s ease;
 .poza {
 	background-color: inherit;
 	box-shadow: 5px 5px 5px grey;
-	filter: opacity(0.3);
+	filter: grayscale(90);
 }
 
 .poza:hover {
-	filter: opacity(1);
+	
 	border: 2px solid;
 	
 }
@@ -168,6 +167,7 @@ transition: all 0.2s ease;
 	display: inline-block;
 	float: left;
 	bottom: 0px;
+	
 }
 
 .pagina a{
@@ -177,9 +177,9 @@ transition: all 0.2s ease;
 	color: #fff;
 	font-size: 23px;
 	letter-spacing: 3px;
-	padding: 5px 15px 5px 1px;
+	padding: 5px 15px;
 	border: 1px black solid;
-	border-radius: 2px;
+	border-radius: 2px;	
 }
 
 
@@ -194,6 +194,7 @@ transition: all 0.2s ease;
 	position: absolute;
 	bottom: 0px;
 }
+
 
 
 /* About me end */
@@ -270,6 +271,8 @@ transition: all 0.2s ease;
 	box-sizing: border-box; 
 	margin: 10px;
 	text-transform: uppercase;
+	position: relative;
+	
 }
 
 #mixitupid .box:hover{
@@ -484,12 +487,7 @@ transition: all 0.2s ease;
 }
 
 /* END CONTACT ME SECTION */
-#GoogleMaps {
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-	filter: grayscale(100%);
-	border-radius: 10px;
-	
-}
+
 
 /* START FOOTER SECTION */
 footer {
@@ -700,6 +698,5 @@ footer .social-list li a i:hover {
 		font-size: 25px;
 	}
 }
-
 
 
