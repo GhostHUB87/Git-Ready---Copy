@@ -1,4 +1,8 @@
 
+function myFunction() {
+  alert("This is not fully responsive for all devices yet, thanks :)");
+}
+
 var map;
       function initMap() {
         var uluru = {lat: 44.314089, lng: 23.838718};
@@ -66,7 +70,7 @@ var typed = new Typed('#typed', {
 // ScrollReveal start
 ScrollReveal().reveal('.sd-scroll', { delay: 2000 })
 ScrollReveal().reveal('.poza', { delay: 1000, duration: 1500 })
-ScrollReveal().reveal('.content', { delay: 1800, duration: 1000 })
+ScrollReveal().reveal('.content', { delay: 1000, duration: 700 })
 ScrollReveal().reveal('#page3', { delay: 1000, duration: 1500 })
 ScrollReveal().reveal('.page4', { delay: 600, duration: 1500 })
 // ScrollReveal end
@@ -107,8 +111,27 @@ $(window).on("scroll", function () {
   }  
 });
 
+$('.poza').hover(function(){
+  $('.left p').css('background-color', 'red');
+  
+}, function(){
+  $('.left p').css('background-color', '');
+  
+})
 
 
 
 
+// const eu = {
+//   nume : 'Delcea',
+//   prenume : 'Sergiu',
+//   varsta : 30
+// }
 
+// let userEu = JSON.stringify(eu)
+// console.log(userEu)
+// localStorage.setItem('eu', userEu)
+
+let userJSON = localStorage.getItem('eu')
+let userM = JSON.parse(userJSON)
+console.log(userM.nume + ' ' + userM.varsta)
