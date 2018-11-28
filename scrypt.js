@@ -102,21 +102,26 @@ $('a[href^="#"]').on('click', function (event) {
 });
 // smooth scroll end
 
+//navbar behavior change start
 $(window).on("scroll", function () {
   if ($(window).width() > 721) {
     if ($(this).scrollTop() > 450) {
-      $('#nav').css('background-color', 'black');
+      $('.fixed-top').addClass('nav-scroll')
       $('.btn-3').css('color', 'white')
+    } else if ($(this).scrollTop() < 450){
+      $('.fixed-top').removeClass('nav-scroll')
+      $('.btn-3').css('color', 'black')
     }
   }  
 });
+//navbar behavior change end
 
 $('.poza').hover(function(){
   $('.left p').css('background-color', 'red');
+ 
   
 }, function(){
-  $('.left p').css('background-color', '');
-  
+  $('.left p').css('background-color', 'blue');  
 })
 
 
@@ -128,10 +133,11 @@ $('.poza').hover(function(){
 //   varsta : 30
 // }
 
-// let userEu = JSON.stringify(eu)
-// console.log(userEu)
-// localStorage.setItem('eu', userEu)
 
-let userJSON = localStorage.getItem('eu')
-let userM = JSON.parse(userJSON)
-console.log(userM.nume + ' ' + userM.varsta)
+// let user = JSON.stringify(eu)
+// console.log(user)
+// localStorage.setItem('eu', user)
+
+// let user = localStorage.getItem('eu')
+// let userJSON = JSON.parse(user)
+// console.log(userJSON.nume + ' ' + userJSON.varsta)

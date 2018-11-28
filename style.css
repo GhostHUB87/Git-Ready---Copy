@@ -24,7 +24,7 @@ html {
     color:#fff;
 	font-size: 6vmax; 
 	line-height: 132px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sedgwick Ave', cursive;
     font-weight: 900;   
     text-transform: capitalize;
     margin: 0;
@@ -40,9 +40,13 @@ html {
 	background-image: url(images/logo.jpg);
 	background-repeat: no-repeat;
 	background-size: 110px, auto;
+	transition: height .5s, line-height .8s;
 }
 
-
+.nav-scroll {
+	background-color: rgba(22, 19, 19, 0.8) !important;
+	height: 100px !important;
+}
 
 ul {	
 	float: right;
@@ -140,6 +144,7 @@ transition: all 0.2s ease;
 }
 
 .poza {
+	position: relative;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;	
@@ -153,27 +158,36 @@ transition: all 0.2s ease;
 	width: 100%;
 	margin: 0 auto;	
 	padding: 0 auto;
-	transition: ease-in 250ms;
+	transition: ease-in-out 250ms;
 	z-index: 1;
-	clear: both;
-	
+	clear: both;	
 }
 
 .pagina img:hover {
 	transform: scale(1.4)
 }
 
-.left{
+
+.name-profile {
+	position: relative;
+	display: block;	
+	box-sizing: border-box;
 	text-align: center;
+	height: 150px;	
 }
 
-#left{
-	font-size: 5em;
-	z-index: 3;
-	color: #fff;
-	bottom: 70px;
-	font-family: Cambria;
+.name-profile p{
+	color: #FF9F55;
+	font-size: 3rem !important;
+	transition: 300ms;
+	font-family: 'Sedgwick Ave', cursive !important;
+	top: 20px;	
 }
+
+.poza:hover .name-profile p{
+	font-size: 0 !important;
+}
+
 
 .content{
 	display: inline-block;
@@ -242,12 +256,12 @@ transition: all 0.2s ease;
 /* timp-line start */
 
 .timp-line{  
-  width: 100%;
-  height: auto;
-  background: orange;
-  margin-top: -95px;
-  padding-top: 20px;
-  padding-bottom: -1300px;
+	width: 100%;
+	height: auto;
+	background: orange;
+	margin-top: -95px;
+	padding-top: 20px;
+	padding-bottom: -1300px;
 }
 
 .timeline {
@@ -473,10 +487,9 @@ transition: all 0.2s ease;
 
 /* mixit up end */
 
-
 #page3 {
 	top: 55px;
-	height: 580px;
+	height: 580px;	
 	background-color: black;
 	background-image: linear-gradient(to right, white, black, white);
 	width: 80%;
@@ -572,7 +585,7 @@ transition: all 0.2s ease;
 .page4{
 	margin: 20px;
 	background-image: linear-gradient(to right, rgb(185, 93, 93), rgb(202, 202, 60));
-	padding-top: 23px;
+	padding-top: 23px;	
 }
 
 .progress{
@@ -586,8 +599,6 @@ transition: all 0.2s ease;
 	font-size: 20px;
 	padding-top: 7px;
 }
-
-
 
 /* Progress bar end */
 
@@ -609,7 +620,7 @@ transition: all 0.2s ease;
 .contact form {
     padding: 20px;
 	border-radius: 5px;
-	width: 45vw;
+	width: 40vw;
 }
 .contact input[type="text"],
 .contact input[type="email"] {
