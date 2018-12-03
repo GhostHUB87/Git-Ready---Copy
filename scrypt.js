@@ -116,14 +116,6 @@ $(window).on("scroll", function () {
 });
 //navbar behavior change end
 
-$('.poza').hover(function(){
-  $('.left p').css('background-color', 'red');
- 
-  
-}, function(){
-  $('.left p').css('background-color', 'blue');  
-})
-
 
 
 
